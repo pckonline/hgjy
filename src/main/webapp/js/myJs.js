@@ -1,0 +1,23 @@
+$(document).ready(function(){
+    $("#lo1").hide(0,function(){
+        $("#lo2").hide(0,function(){
+            $("#lo3").hide(0,function(){
+                $("#lo4").hide(0,function(){
+                    $("#lo5").hide(0,function(){
+                        $("#lo1").show(500,function(){
+                            $("#lo2").show(500,function(){
+                                $("#lo3").show(500,function(){
+                                    $("#lo4").show(500,function(){
+                                        $("#lo5").show(500,function(){
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    });
+                });
+            });
+        });
+    });
+});
+
