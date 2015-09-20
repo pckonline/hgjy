@@ -25,6 +25,7 @@ $(document).ready(function(){
             $("#workme1").show(500);
         });
     });
+    $("#allmap").hide(0);
 });
 
 
