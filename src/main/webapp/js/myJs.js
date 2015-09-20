@@ -19,5 +19,12 @@ $(document).ready(function(){
             });
         });
     });
+    $("#workme1").hide(0,function(){
+        $("#worker1").click(2000,function(){
+            $("#worker1").attr("src","/img/01.jpg");
+            $("#workme1").show(500);
+        });
+    });
 });
+
 
