@@ -1,4 +1,5 @@
 $(document).ready(function(){
+//    这个是log的动画效果
     $("#lo1").hide(0,function(){
         $("#lo2").hide(0,function(){
             $("#lo3").hide(0,function(){
@@ -19,13 +20,55 @@ $(document).ready(function(){
             });
         });
     });
+    //最新作品的滚动播放动画
     $("#workme1").hide(0,function(){
         $("#worker1").click(2000,function(){
             $("#worker1").attr("src","/img/01.jpg");
             $("#workme1").show(500);
         });
     });
+    //这个是百度地图的div隐藏
     $("#allmap").hide(0);
+
+    //点击后图片变焦点显示
+    $("#slip0").click(function(){
+        $("#obj1").hide(500,function(){
+            $("#obj1").attr("src","/img/01.jpg").show(500);
+        });
+    });
+    $("#slip1").click(function(){
+        $("#obj1").hide(500,function(){
+            $("#obj1").attr("src","/img/01.jpg").show(500);
+        });
+    });
+    $("#slip2").click(function(){
+        $("#obj1").hide(500,function(){
+            $("#obj1").attr("src","/img/01.jpg").show(500);
+        });
+    });
+
+    //公告栏导航条的效果
+    $("#active1").hover(function(){
+        $("#active1").css("background-color","#dddddd");
+    },function(){
+        $("#active1").css("background-color","#000000");
+    });
+    $("#active2").hover(function(){
+        $("#active2").css("background-color","#dddddd");
+    },function(){
+        $("#active2").css("background-color","#000000");
+    });
+    $("#active3").hover(function(){
+        $("#active3").css("background-color","#dddddd");
+    },function(){
+        $("#active3").css("background-color","#000000");
+    });
+    $("#active4").hover(function(){
+        $("#active4").css("background-color","#dddddd");
+    },function(){
+        $("#active4").css("background-color","#000000");
+    });
+
 });
 
 
