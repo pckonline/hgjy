@@ -48,22 +48,42 @@ $(document).ready(function(){
     });
 
     //公告栏导航条的效果
+    $("#body1").hide();
+    $("#body2").hide();
+    $("#body3").hide();
+    $("#body4").hide();
     $("#active1").hover(function(){
         $("#active1").css("background-color","#dddddd");
+        $("#body2").hide();
+        $("#body3").hide();
+        $("#body4").hide();
+        $("#body1").show();
     },function(){
         $("#active1").css("background-color","#000000");
     });
     $("#active2").hover(function(){
+        $("#body1").hide();
+        $("#body3").hide();
+        $("#body4").hide();
+        $("#body2").show();
         $("#active2").css("background-color","#dddddd");
     },function(){
         $("#active2").css("background-color","#000000");
     });
     $("#active3").hover(function(){
+        $("#body1").hide();
+        $("#body2").hide();
+        $("#body4").hide();
+        $("#body3").show();
         $("#active3").css("background-color","#dddddd");
     },function(){
         $("#active3").css("background-color","#000000");
     });
     $("#active4").hover(function(){
+        $("#body1").hide();
+        $("#body2").hide();
+        $("#body3").hide();
+        $("#body4").show();
         $("#active4").css("background-color","#dddddd");
     },function(){
         $("#active4").css("background-color","#000000");

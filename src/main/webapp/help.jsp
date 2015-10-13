@@ -1,3 +1,4 @@
+<%@ page import="Dao.Top" %>
 <%--
   Created by IntelliJ IDEA.
   User: online
@@ -20,6 +21,6 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
 </head>
 <body>
-
+<%=Top.top%>
 </body>
 </html>
