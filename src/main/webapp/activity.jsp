@@ -48,13 +48,7 @@
 <div class="container-fluid" style="background-color: #000000">
     <div class="row">
         <div class="col-xs-6" style="text-align: center">
-            <a href="#"><img src="img/01.jpg" alt="公告" class="img-rounded img-responsive" id="obj1"></a>
 
-            <div style="background-color: #000000">
-                <button data-target="#carousel-example-generic" data-slide-to="0" class="active" id="slip0"></button>
-                <button data-target="#carousel-example-generic" data-slide-to="1" class="" id="slip1"></button>
-                <button data-target="#carousel-example-generic" data-slide-to="2" class="" id="slip2"></button>
-            </div>
         </div>
         <div class="col-xs-6">
             <div class="row" style="background-color: #000000">

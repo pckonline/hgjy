@@ -32,61 +32,53 @@ $(document).ready(function(){
 
     //点击后图片变焦点显示
     $("#slip0").click(function(){
-        $("#obj1").hide(500,function(){
-            $("#obj1").attr("src","/img/01.jpg").show(500);
+        $("#obj1").hide(0,function(){
+            $("#obj1").attr("src","/img/01.jpg").show(0);
         });
     });
     $("#slip1").click(function(){
-        $("#obj1").hide(500,function(){
-            $("#obj1").attr("src","/img/01.jpg").show(500);
+        $("#obj1").hide(0,function(){
+            $("#obj1").attr("src","/img/02.jpg").show(0);
         });
     });
     $("#slip2").click(function(){
-        $("#obj1").hide(500,function(){
-            $("#obj1").attr("src","/img/01.jpg").show(500);
+        $("#obj1").hide(0,function(){
+            $("#obj1").attr("src","/img/03.jpg").show(0);
         });
     });
-
-    //公告栏导航条的效果
-    $("#body1").hide();
+    //海报右方
+    $("#body1").show();
     $("#body2").hide();
-    $("#body3").hide();
-    $("#body4").hide();
-    $("#active1").hover(function(){
-        $("#active1").css("background-color","#dddddd");
+    $("#day1").hover(function(){
+        $("#day1").css("color","red");
         $("#body2").hide();
-        $("#body3").hide();
-        $("#body4").hide();
         $("#body1").show();
     },function(){
-        $("#active1").css("background-color","#000000");
+        $("#day1").css("color","#7b7b7b");
     });
-    $("#active2").hover(function(){
+    $("#day2").hover(function(){
+        $("#day2").css("color","red");
         $("#body1").hide();
-        $("#body3").hide();
-        $("#body4").hide();
         $("#body2").show();
-        $("#active2").css("background-color","#dddddd");
     },function(){
-        $("#active2").css("background-color","#000000");
+        $("#day2").css("color","#7b7b7b");
     });
-    $("#active3").hover(function(){
-        $("#body1").hide();
-        $("#body2").hide();
+    //店招
+    $("#body3").show();
+    $("#body4").hide();
+    $("#day3").hover(function(){
+        $("#day3").css("color","red");
         $("#body4").hide();
         $("#body3").show();
-        $("#active3").css("background-color","#dddddd");
     },function(){
-        $("#active3").css("background-color","#000000");
+        $("#day3").css("color","#7b7b7b");
     });
-    $("#active4").hover(function(){
-        $("#body1").hide();
-        $("#body2").hide();
+    $("#day4").hover(function(){
+        $("#day4").css("color","red");
         $("#body3").hide();
         $("#body4").show();
-        $("#active4").css("background-color","#dddddd");
     },function(){
-        $("#active4").css("background-color","#000000");
+        $("#day4").css("color","#7b7b7b");
     });
 
 });
